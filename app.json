@@ -1,0 +1,30 @@
+{
+  "name": "Heroku-v2-ray",
+  "description": "将v2ray部署在Heroku上",
+  "keywords": [
+    "v2ray VMess VLESS"
+  ],
+  "env": {
+    "PROTOCOL": {
+      "description": "协议VMess或VLESS，请填小写的vmess或vless",
+      "value": "vmess",
+      "required": true
+    },
+    "UUID": {
+      "description": "用户的主ID",
+      "value": "",
+      "required": false
+    },
+    "WS_PATH": {
+      "description": "websocket路径",
+      "value": "/ray",
+      "required": true
+    }
+  },
+  "website": "https://github.com/wentian804/Heroku-v2-ray",
+  "repository": "https://github.com/wentian804/Heroku-v2-ray",
+  "stack": "container",
+  "features": [
+    "runtime-dyno-metadata"
+  ]
+}
